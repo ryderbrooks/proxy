@@ -1,0 +1,47 @@
+{
+  "name": "@ryder_brooks/proxy",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "setup": "npm install",
+    "build": "tsc",
+    "lint": "node_modules/.bin/eslint --ignore-path .gitignore ./src/**/*.ts -f json -o ./reports/lint/eslint.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryderbrooks/proxy.git"
+  },
+  "homepage": "https://github.com/ryderbrooks/proxy#readme",
+  "bugs": {
+    "url": "https://github.com/ryderbrooks/proxy/issues"
+  },
+  "files": [
+    "dist/lib/**.js",
+    "dist/lib/*.d.ts",
+    "dist/meta/*.d.ts",
+    "dist/__tests__/*.js",
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "latest",
+    "@types/node": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "@typescript-eslint/typescript-estree": "latest",
+    "eslint": "latest",
+    "eslint-plugin-jest": "latest",
+    "ts-node": "latest",
+    "typedoc": "latest",
+    "typescript": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
